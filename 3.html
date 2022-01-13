@@ -2,33 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<style>
-body{
-  margin: 0;
-}
-a {
-  color:black;
-text-decoration: none;
-}
-#active{color:red;}
-.saw{color:gray;
-}
-h1{
-  font-size: 45px;
-  text-align: center;
-  border-bottom: 1px solid gray;
-  margin: 0;
-  padding: 20px;
-}
-ol{
-  border-right: 1px solid gray;
-  width:100px;
-  margin: 0;
-  padding: 20px;
-}
-
-
-</style> <!-- a태그 선택자 < class선택자:. < id선택자:#
+<link rel="stylesheet" href="style.css"> <!-- a태그 선택자 < class선택자:. < id선택자:#
  단 id 카드는 중복x -->
 <h1>WEB</h1>
 
@@ -36,11 +10,13 @@ ol{
 </head>
 <body>
 
-<ol>
-  <li><a href="2.html"class="saw">HTML</a></li>
-<li><a href="3.html"class="saw" id="active">CSS</a></li>
-<li><a href="4.html">Javascript</a></li>
-</ol>
+<div id="grid">
+  <ol>
+   <li><a href="2.html">HTML</a></li>
+   <li><a href="3.html">CSS</a></li>
+   <li><a href="4.html">Javascript</a></li>
+  </ol>
+<div id="article">
 <h2>CSS</h2>
 [ cascading style sheets ]
 <p>기존의 HTML은 웹 문서를 다양하게 설계하고 수시로 변경하는데 <br>
@@ -58,6 +34,8 @@ HTML을 이용해서 웹 페이지를 제작할 경우 <br>
  자유롭게 선택하거나 변경할 수 있으며 유지·보수도 간편하게 할 수 있다.
 
 </p>
+</div>
+</div>
 
 </body>
 </html>
