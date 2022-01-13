@@ -12,7 +12,7 @@ h1{
   width:113px;
   border-right: 1px solid gray;
   border-bottom: 1px solid gray;
-  grid-template-rows: 50px 50px;
+
 }
 .saw{
   border-bottom: none;
@@ -22,7 +22,7 @@ body{
 }
 a {
   color:black;
-text-decoration: ;
+text-decoration: none;
 }
 #grid{
   display: grid;
