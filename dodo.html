@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>사이트 만들기</title>
+<style>
+  h1{
+     text-align:left;
+     border-bottom:2px solid hotpink;
+     margin:0;
+     padding:30px;
+     display:block;
+  }
+  #grid{
+     display: grid;
+     grid-template-columns:140px 1fr;
+  }
+.dd{
+  border-right:1px solid gray;
+  width:80px;
+  margin:0;
+  padding-top:15px;
+  padding-left:40px;
+}
+body{
+  margin:0;
+}
+a{
+  text-decoration:none;
+  font-weight:bold;
+  color:skyblue;
+}
+
+  input:-ms-input-placeholder{color:#a8a8a8;}
+  input::-webkit-input-placeholder{color:#a8a8a8;}
+  input::-moz-placeholder{color:#a8a8a8;}
+
+  .search{
+    height:40px;
+    width:400px;
+    border:2px solid hotpink;
+    background: #ffffff;
+    margin-left:80px;
+
+  }
+  .search input{
+    font-size:16px;
+    width:325px;
+    padding:10px;
+    border:0;
+    outline:none;
+    float:left;
+  }
+  .search button{
+    width:50px;
+    height:100%;
+    border:0;
+    background:hotpink;
+    outline:none;
+    float:right;
+    color:white;
+  }
+
+.na{
+
+  height:40px;
+  width:400px;
+  border:2px solid green;
+background: #ffffff;
+  margin-left:80px;
+}
+.na input{
+  font-size:16px;
+  width:325px;
+  padding:10px;
+  border:0;
+  outline:none;
+  float:left;
+}
+
+.na button{
+    height:100%;
+  width:50px;
+  border:0;
+  background:green;
+  outline:none;
+  float:right;
+  color:white;
+}
+.na from{
+  display:
+}
+#blind{
+  display:none;
+}
+img{
+  float:right;
+}
+
+</style>
+<script>
+
+</script>
+
+  </head>
+
+  <body>
+    <h1>방울도마도</h1>
+<div id="grid">
+  <ul class="dd">
+   <li>
+    <a href="https://github.com/Doking95"
+    target="_blank">
+    Github</a></li>
+   <li>
+     <a href="https://www.youtube.com/channel/UCvc8kv-i5fvFTJBFAk6n1SA"target="_blank"> Study</a></li>
+   <li>
+     <a href="https://blog.naver.com/rt566"target="_blank">Blog</a></li>
+  </ul>
+  <div>
+    <p>
+      안녕하세요 사이트 만들기 연습중입니다.<br>
+      감사합니다.
+    </p>
+
+  </div>
+</div>
+<form action="http://localhost/login.php">
+  <p>아이디:<input type="text"name="id"></p>
+  <p>비밀번호:<input type="password"name="pwd"></p>
+  <input type="submit">
+</form>
+<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMThfMjMz%2FMDAxNjM0NDgzNzUyNjk5.qksBDWShZEd9-1Jk38_VAMs-Lwb87fwskxls9doqLegg.rNNrr5K49KiX2ACvkyD8_kOMakqMTLOQHsQC7izKIrUg.JPEG.ryung3035%2FIMG_8778.jpg&type=a340" width'400'>
+
+<br><br><br>
+    <div class="search">
+      <input type="text" placeholder="도마도 검색창">
+      <button type="button" name="button" value="검색" onclick="alert('낚임')">검색</button>
+    </div>
+<br><br><br>
+<!-- Search Google -->
+<form method=get action="http://www.google.co.kr/search" target="_blank" >
+  <table bgcolor="#FFFFFF">
+   <tr>
+      <td>
+        <input type=text name=q size=25 maxlength=255 value="" />
+         <!-- 구글 검색 입력 창 -->
+        <input type=submit name=btnG value="Google 검색" />
+        <!-- 검색 버튼 -->
+     </td>
+   </tr>
+  </table>
+</form> <!-- Search Google -->
+<br>
+<div class="na">
+<div id="blind"><form name=fsearch method=get  action="http://search.naver.com/search.naver" target="_blank"></div>
+<input type=hidden name=where value="nexteach">
+<input name=query itemname="검색어" required value="" size="32"  placeholder="네이버 검색창">
+  <button type=submit name=btnG value="Naver 검색">검색</button>
+</form></div>
+
+  <form name=fsearch method=get style="margin:0px;" action="http://search.naver.com/search.naver" target="_blank">
+  <input type=hidden name=where value="nexteach">
+  <input name=query itemname="검색어" required value="" size="33" placeholder="네이버검색창">
+  <input type=image src="" width='80' height='20' border=0 align=absmiddle>
+  </form>
+<!--<input type=image src="네이버로고혹은검색이미지주소를 넣으세요^^" width='60' height='20' border=0 align=absmiddle>-->
+
+
+  </body>
+</html>
